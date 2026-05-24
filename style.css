@@ -31,18 +31,23 @@ header {
 main {
     background-color: var(--white);
     padding: 2rem;
+    border-radius: 1.5625rem 1.5625rem 0 0;
 }
-.conta {
+.conta,
+.gorjeta,
+.pessoas {
     margin-bottom: 2rem;
 }
 
 .conta label,
-.gorjeta label {
+.gorjeta label,
+.pessoas label {
     color: var(--green-500);
     font-weight: 700;
 }
 
-.conta div {
+.conta div,
+.pessoas div {
     margin-top: 0.4rem;
     background-color: var(--green-100);
     padding: 0.4rem 1.2 rem;
@@ -51,7 +56,8 @@ main {
     justify-content: space-between;
 }
 
-.conta input {
+.conta input,
+.pessoas input {
     border: none;
     text-align: right;
     width: 100%;
@@ -61,13 +67,16 @@ main {
     color: var(--green-800);
 }
 
-.conta input::placeholder {
+.conta input::placeholder,
+.pessoas input::placeholder {
    color: var(--green-300);
 }
 
-.conta:has(input:focus) div {
+.conta:has(input:focus) div,
+.pessoas:has(input:focus) div {
     outline: 2px solid var(--light-green);
 }
+
 
 .gorjeta div {
     margin-top: 1rem;
@@ -92,8 +101,21 @@ main {
 .gorjeta #outra {
     width: 100%;
     background-color: var(--green-100);
+    color: var(--green-800);
 }
 
+.gorjeta #outra::placeholder {
+   color: var(--green-300);
+}
 
+.pessoas #erro {
+   display: none;
+}
+
+.resultados {
+    background-color: var(--green-800);
+    border-radius: 0.9365rem;
+    padding: 1.5rem;
+}
 
 
