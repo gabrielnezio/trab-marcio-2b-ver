@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
     <title>Calculadora de Gorjeta</title>
 </head>
 <body>
@@ -39,9 +40,11 @@
            </div>
 
            <div class="pessoas">
-                 <label for="pessoas">Quantidade de pessoas</label>
-                 <p id="erro">Não pode ser zero</p>
-                <div>
+                <div class="textos">
+                    <label for="pessoas">Quantidade de pessoas</label>
+                    <p id="erro">Não pode ser zero</p>
+                </div>
+                <div class="input-box" id="erro-div">
                     <img src="./images/icon-person.svg" alt="icone do cifrao">
                     <input type="number" name="pessoas" id="pessoas" placeholder="0">
                 </div>
@@ -51,13 +54,14 @@
     
     <section class="resultados">
 
-        <div class="gorjeta-total">
+       <div>
+         <div class="gorjeta-total">
            <p>
             <Strong>Gorjeta</Strong> <br>
             / pessoa
             </p>
 
-            <strong>$ 0.00</strong> 
+            <strong>R$ 0.00</strong> 
         </div>
 
          <div class="total">
@@ -66,8 +70,9 @@
             / pessoa
             </p>
 
-            <strong>$ 0.00</strong> 
+            <strong>R$ 0.00</strong> 
         </div>
+       </div>
 
         <button>limpar</button>
     </section>
